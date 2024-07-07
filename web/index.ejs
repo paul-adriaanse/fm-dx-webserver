@@ -48,7 +48,7 @@
                             <button class="playbutton" aria-label="Play / Stop"><i class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                         <div class="panel-100 m-0 hover-brighten flex-center tooltip" id="ps-container" style="height: 90px;">
-                            <span class="text-big" id="data-ps"></span>
+                            <span class="text" id="data-ps"></span>
                         </div>
                     </div>
                     
@@ -67,7 +67,7 @@
                     
                     <div class="panel-33 hover-brighten" id="freq-container">
                         <h2>FREQUENCY</h2>
-                        <span id="data-frequency" class="text-big"></span>
+                        <span id="data-frequency" class="text"></span>
                     </div>
                     
                     <div class="panel-33">
@@ -77,7 +77,7 @@
                             <span id="data-signal-highest"></span>
                             <% if (device == 'sdr') { %> <span>dB SNR</span> <% } else { %> <span class="signal-units"></span> <% } %>
                         </div>
-                        <div class="text-big">
+                        <div class="text">
                             <span id="data-signal"></span><!--
                         --><span id="data-signal-decimal" class="text-medium-big" style="opacity:0.7;"></span>
                             <% if (device == 'sdr') { %> <span class="text-medium">dB SNR</span> <% } else { %> <span class="signal-units text-medium">dBf</span> <% } %>
