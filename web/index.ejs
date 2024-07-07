@@ -8,13 +8,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=300, initial-scale=1">
 
     <meta property="og:title" content="FM-DX WebServer [<%= tunerName %>]">
     <meta property="og:type" content="website">
     <meta property="og:image" content="favicon.png">
-    <meta property="og:description" content="Server description: <%= tunerDescMeta %>.">
-    
+       
     <script src="js/init.js"></script>
     
     <!-- 3LAS Scripts for Audio streaming -->
@@ -39,9 +38,6 @@
     <div id="wrapper">
         <div class="panel-100 no-bg tuner-info">
             <h1 id="tuner-name"><%= tunerName %></h1>
-            <p id="tuner-desc">
-                <%- tunerDesc %>
-            </p>
             <div style="clear: both"></div>
         </div>
         <div class="flex-container">
@@ -66,7 +62,7 @@
                 <div class="flex-container">
                     <div class="panel-33 hover-brighten tooltip" id="pi-code-container">
                         <h2>PI CODE</h2>
-                        <span id="data-pi" class="text-big text-uppercase"></span>
+                        <span id="data-pi" class="text text-uppercase"></span>
                     </div>
                     
                     <div class="panel-33 hover-brighten" id="freq-container">
