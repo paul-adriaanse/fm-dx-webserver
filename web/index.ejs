@@ -73,10 +73,12 @@
                         <div class="text-small text-gray highest-signal-container">
                             <i class="fa-solid fa-arrow-up"></i>
                             <span id="data-signal-highest"></span>
+                            <% if (device == 'sdr') { %> <span>dB SNR</span> <% } else { %> <span class="signal-units"></span> <% } %>
                         </div>
                         <div class="text">
                             <span id="data-signal"></span>
                             <span id="data-signal-decimal" class="text-mediumi-big" style="opacity:0.7;"></span>
+                            <% if (device == 'sdr') { %> <span class="text-medium">dB SNR</span> <% } else { %> <span class="signal-units text-medium">dBf</span> <% } %>
                         </div>
                     </div>
                 </div>
